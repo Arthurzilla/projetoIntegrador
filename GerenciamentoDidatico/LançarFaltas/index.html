@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançar Faltas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerenciamento Didático - Lançar faltas</h1>
+
+    <main>
+        
+
+        <div id="esquerda">
+            <a href="../PlanejamentoDeAulas/index.html">Planejamento de aula</a>
+            <br><br>
+            <a href="../LançarFaltas/index.html">Lançar Faltas</a>
+            <br><br>
+            <a href="AnotaçõesDoAlunos">Anotações do aluno</a>
+            <br><br>
+            <a href="Instrutores.html">Intrutores</a>
+            <br><br>
+            <a href="Avaliações.html">Avaliações</a>
+            <br> <br>
+            <a href="Inscrições.html">Inscrições</a>
+            <br><br>
+            <a href="DocumentosAnexados.html">Documentos Anexados</a>
+            <br><br>
+            <a href="RealizarUnidadeCurricular">Realizar Unidade Curricular</a>
+            <br><br>
+            <a href="PlanoDeTrabalhoDocente.html">Plano de trabalho docente</a>
+            <br><br>
+            <a href="DiárioDeClasse.html">Diário de classe</a>
+            <br><br>
+            <a href="RelatórioAnáliseDaTurma.html">Relátório análise da turma</a>
+            <br><br>
+            <a href="AcompAprend.html">Acomp. Aprend.</a>
+            <br><br>
+            <a href="BoletimDoALuno.html">Boletim do aluno</a>
+            <br><br>
+            <a href="EnvioDeArquivos.html">Envio de arquivos</a>
+        </div>
+
+        <div id="meio"><p>Escolha uma aula onde as faltas serão registradas</p>
+        
+        
+            <select>
+              <option value="4">06/09/2023</option>
+              <option value="5">12/09/2023</option> 
+            </select>
+
+            
+
+            <table>
+                <tr >
+                    <td colspan="2">Aluno:</td><td>Presente:</td><td>Ausente:</td>
+                </tr>
+
+               
+            </table>
+            <br>
+            <div class="pogger">
+                <label>ARTHUR CARDOSO: </label>
+
+                <div>
+                    <input type="radio" id="presente" name="drone-1" value="presente"/>
+                    <input type="radio" id="ausente" name="drone-1" value="ausente">
+                </div>
+                
+              </div>
+
+              <div class="pogger">
+                <label>BERNARDO DO CANTO MARASCHIM:</label>
+                <div>
+                    <input type="radio" id="presente" name="drone-2" value="presente"/>
+                    <input type="radio" id="ausente" name="drone-2" value="ausente">
+                </div>
+              </div>
+
+              <div class="pogger">
+                <label>PEDRO ZANETTI FIGUEIREDO:</label>
+                <div>
+                    <input type="radio" id="presente" name="drone-3" value="presente"/>
+                    <input type="radio" id="ausente" name="drone-3" value="ausente">
+                </div>
+              </div>
+
+              <div class="pogger">
+                <label>GEORGE WASHINGTON DA SILVA JÚNIOR:</label>
+                <div>
+                    <input type="radio" id="presente" name="drone-4" value="presente"/>
+                    <input type="radio" id="ausente" name="drone-4" value="ausente">
+                </div>
+              </div>
+              <br>
+              <button id="button-pogger">Registrar</button>
+          </div>
+        </div>
+
+          <script src="script.js">
+          </script>
+    </main>
+</body>
+</html>
