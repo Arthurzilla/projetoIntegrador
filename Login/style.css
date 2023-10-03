@@ -1,5 +1,9 @@
 body{
-    background-color: orange;
+        background-color: lightgrey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 }
 
 main{
@@ -8,10 +12,9 @@ main{
 }
 
 .block{
-    background-color: rgb(255, 255, 255);
-    height:300px;
-    width:450px;
-    border: 2px solid rgb(0, 0, 0);
+    background-color: white;
+    height:350px;
+    width:500px;
     padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
@@ -20,10 +23,11 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
+
+
 
 .block-header{
     padding-left: 10px;
@@ -38,19 +42,36 @@ main{
 }
 
 #username{
-    background-color: aqua;
-    border: 2px solid rgb(255, 255, 255);
+    background-color: white;
+    border: 2px solid lightgray;
     padding: 5px;
     border-radius: 10px;
+    width: 300px;
+    height: 20px;
 }   
 
+#username:focus{
+
+    border: 2px solid #1670BE;
+    outline-offset: 0px;
+    outline: none;
+}
 
 #password{
-    background-color: aqua;
-    border: 2px solid rgb(255, 255, 255);
+    background-color: white;
+    border: 2px solid lightgray;
     padding: 5px;
     border-radius: 10px;
+    width: 300px;
+    height: 20px;
 }
+
+#password:focus{
+    border: 2px solid #1670BE;
+    outline-offset: 0px;
+    outline: none;
+}
+
 
 
 
@@ -69,7 +90,7 @@ main{
 
 .block-footer-footer button{
     color: white;
-    background-color: blue;
+    background-color: blueviolet;
     padding: 5px 10px 5px 10px;
     border: 2px solid white;
     border-radius: 5px;
@@ -82,5 +103,10 @@ main{
 
 .block-footer-footer a{
     text-decoration: none;
+}
+
+#senac-logo{
+    width: 200px;
+    height: 10%;
 }
 
