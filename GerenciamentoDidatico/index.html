@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento Didático - Sumário</title>
+    
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Gerenciamento Didático - Sumário </h1>
+    <header>
+            <nav>
+                <img id="senac-logo" src="https://logodownload.org/wp-content/uploads/2014/10/senac-logo-0.png"" alt="senac-logo" srcset="">
+
+                <div>
+                    <p>Sua turma:</p>
+                    <select name="turma">
+                        <option value="turma-1">1° Ano</option>
+                        <option value="turma-2">2° Ano</option>
+                        <option value="turma-3">3° Ano</option>
+                    </select>
+                </div>
+
+                
+            </nav>
+    </header>
 <main>
-    <div id="esquerda">
+
+    
+    <h1 id="principal-section-top">Gerenciamento Didático - Sumário </h1>
+
+<div class="principal-section">
+
+    <div class="principal-section-left">
         <a href="./PlanejamentoDeAulas/index.html">Planejamento de aula</a>
         <br><br>
         <a href="./LançarFaltas/index.html">Lançar Faltas</a>
@@ -39,10 +62,16 @@
         <a href="EnvioDeArquivos.html">Envio de arquivos</a>
     </div>
 
-    <div>
+    <div class="principal-section-right">
         <p>Escolha umas das seções ao lado para prosseguir</p>
     </div>
+</div>
 
+<style>
+    #senac-logo{
+        width: 10%;
+    }
+</style>
 </main>
 </body>
 </html>

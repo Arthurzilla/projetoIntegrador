@@ -1,3 +1,5 @@
+
+
 body{
         background-color: lightgrey;
         display: flex;
@@ -106,7 +108,11 @@ main{
 }
 
 #senac-logo{
-    width: 200px;
+    width: 150px;
     height: 10%;
+}
+
+#error{
+    color: red;
 }
 
