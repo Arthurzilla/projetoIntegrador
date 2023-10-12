@@ -15,7 +15,7 @@ function passwordVerification(){
 
 
   function pageRedirect(){
-    window.location.href="../GerenciamentoDidatico/index.html"
+    window.location.href="../GerenciamentoDidatico/Sumario/index.html"
   }
 
   var button = document.getElementById('submit')
