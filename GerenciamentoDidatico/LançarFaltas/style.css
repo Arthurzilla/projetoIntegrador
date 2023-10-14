@@ -130,4 +130,73 @@ html h1{
     font-family: sans-serif;
 
     /* flexbox */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+#chamada{
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    background-color: grey;
+
+    /* flex-box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#aluno-0{
+    width: 100%;
+    background-color: lightgrey;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 6%;
+
+    /* flex-box */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#aluno-0-nome{
+   width: 30%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#aluno-0-presenca{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aluno-1{
+    width: 100%;
+    background-color: lightgrey;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 6%;
+
+    /* flex-box */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
