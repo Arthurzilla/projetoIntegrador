@@ -141,7 +141,6 @@ html h1{
     width: 90%;
     height: 90%;
     overflow-y: scroll;
-    background-color: grey;
 
     /* flex-box */
     display: flex;
@@ -150,7 +149,13 @@ html h1{
     justify-content: flex-start;
 }
 
+#chamada p{
+    font-size: 0.8rem;
+}
+
 #aluno-0{
+    padding-top: 1%;
+    padding-bottom: 1%;
     width: 100%;
     background-color: lightgrey;
     margin-top: 2%;
@@ -181,6 +186,8 @@ html h1{
 }
 
 #aluno-1{
+    padding-top: 1%;
+    padding-bottom: 1%;
     width: 100%;
     background-color: lightgrey;
     margin-top: 2%;
@@ -192,6 +199,22 @@ html h1{
     align-items: center;
     justify-content: space-between;
 }
+
+#aluno-1-nome{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ #aluno-1-presenca{
+     width: 70%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
 
 
