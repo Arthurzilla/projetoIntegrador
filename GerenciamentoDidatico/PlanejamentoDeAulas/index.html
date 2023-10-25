@@ -56,39 +56,42 @@
         </div>
 
         <div id="bloco-principal-inferior-direito">
-
-            <div id="data">
-                <p>Insira a data da aula:</p>
-                <input type="date" id="data-input">
-            </div>
-               
-            <div id="turno">
-                <p>Turno da Aula:</p>
-
-                <div>
-                    Matutino<input type="checkbox"> Verspertino<input type="checkbox">
+            <section>
+                <div id="data">
+                    <p>Insira a data da aula:</p>
+                    <input type="date" id="data-input">
+                </div>
+                   
+                <div id="turno">
+                    <p>Turno da Aula:</p>
+    
+                    <div>
+                        Matutino<input type="checkbox"> Verspertino<input type="checkbox">
+                    </div>
+                    
+                </div>
+                    
+                <div id="quantidade">
+                    <p>Quantas aulas: </p>
+                    <select name="aulas" id="aula-select">
+                        <option value="">Selecione a quantidade</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
                 </div>
                 
-            </div>
-                
-            <div id="quantidade">
-                <p>Quantas aulas: </p>
-                <select name="aulas" id="aula-select">
-                    <option value="">Selecione a quantidade</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                </select>
-            </div>
+                <div id="descricao"> 
+                    <textarea  id="textarea" cols="30" rows="10"  readonly></textarea>
+                </div>
+            </section>
+
             
-            <div id="descricao"> 
-                <textarea  id="textarea" cols="30" rows="10"  readonly></textarea>
-            </div>
     </div>
 </div>
 </div>
