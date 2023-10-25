@@ -123,7 +123,7 @@ html h1{
 }
 
 #bloco-principal-inferior-direito{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height:90%;
     width: 60%;
     border: 3px whitesmoke outset;
@@ -134,13 +134,33 @@ html h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+}
+#bloco-principal-inferior-direito section{
+    background-color: none;
+    width:90%;
+    height:99%;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+#selecao-aula{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
 }
 
 #chamada{
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 80%;
     overflow-y: scroll;
+    background-color: antiquewhite;
 
     /* flex-box */
     display: flex;
@@ -149,77 +169,44 @@ html h1{
     justify-content: flex-start;
 }
 
-#chamada p{
-    font-size: 0.8rem;
-}
-
-#aluno-0{
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width: 100%;
-    background-color: lightgrey;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    height: 6%;
+#chamada ul{
+    background-color: none;
+    width: 97%;
 
     /* flex-box */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-#aluno-0-nome{
-   width: 30%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-#aluno-0-presenca{
-    width: 70%;
-    height: 100%;
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#aluno-1{
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width: 100%;
-    background-color: lightgrey;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    height: 6%;
+#chamada ul li{
+    background-color: grey;
+    width: 97%;
+    margin: 0.3rem;
+    padding: 0.2rem;
 
     /* flex-box */
     display: flex;
-    align-items: center;
     justify-content: space-between;
+
 }
 
-#aluno-1-nome{
-    width: 30%;
-    height: 100%;
+#chamada ul li p{
+    font-size: 80%;
+}
+
+#chamada ul li div{
+    width: 50%;
+    height: auto;
+    background-color: none;
     display: flex;
-    justify-content: center;
     align-items: center;
- }
- 
- #aluno-1-presenca{
-     width: 70%;
-     height: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
- }
+    justify-content: center;
+    background-color: none;
+}
 
-
-
-
-
-
-
-
+#botao-enviar{
+    width: 50%;
+    height: 6%;
+}
