@@ -34,12 +34,13 @@
 <div id="secao-principal">
     <div id="bloco-principal">
     <div id="bloco-principal-superior">
-        <h1>Gerenciamento Didático - Sumário</h1>
+        <h1>Gerenciamento Didático - Planejamento de aulas</h1>
     </div>
 
     <div id="bloco-principal-inferior">
         <div id="bloco-principal-inferior-esquerdo">
-            <a href="../PlanejamentoDeAulas/index.html">Planejamento de aula</a>
+            
+            <a id="planejamento-aula-link" href="../PlanejamentoDeAulas/index.html">Planejamento de aula</a>
             <a href="../LançarFaltas/index.html">Lançar Faltas</a>
             <a href="AnotaçõesDoAlunos">Anotações do aluno</a>
             <a href="Instrutores.html">Intrutores</a>
@@ -66,13 +67,16 @@
                     <p>Turno da Aula:</p>
     
                     <div>
-                        Matutino<input type="checkbox"> Verspertino<input type="checkbox">
+                        <p>
+                            Matutino<input type="checkbox" id="turno-matutino" name="turno">
+                            Vespertino<input type="checkbox" id="turno-vespertino" name="turno">
+                        </p>
                     </div>
                     
                 </div>
                     
                 <div id="quantidade">
-                    <p>Quantas aulas: </p>
+                    <p>Quantas aulas:</p>
                     <select name="aulas" id="aula-select">
                         <option value="">Selecione a quantidade</option>
                         <option value="1">1</option>
@@ -87,8 +91,12 @@
                 </div>
                 
                 <div id="descricao"> 
-                    <textarea  id="textarea" cols="30" rows="10"  readonly></textarea>
+                    <textarea  id="textarea" cols="30" rows="10" ></textarea>
                 </div>
+
+                <button id="bt-enviar-aula">
+                    <p>Enviar Aula</p>
+                </button>
             </section>
 
             
@@ -96,6 +104,6 @@
 </div>
 </div>
 
-
+    <script src="script.js"></script>
 </body>
 </html>

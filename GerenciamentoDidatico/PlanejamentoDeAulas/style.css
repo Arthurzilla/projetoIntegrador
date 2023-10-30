@@ -194,6 +194,9 @@ html h1{
     
 }
 
+
+
+
 #bloco-principal-inferior-esquerdo a{
     /* decoracao do texto */
     text-decoration: none;
@@ -206,10 +209,15 @@ html h1{
     
 }
 
+
+
 #bloco-principal-inferior-esquerdo a:hover{
-    color: darkblue;
+    color: orange;
     font-weight: bold;
 }
+
+
+
 
 #bloco-principal-inferior-direito{
     background-color: white;
@@ -283,5 +291,16 @@ html h1{
 #descricao-input{
     width: 97%;
     height: 100%;
+}
+
+/* botao de enviar aula */
+
+#bt-enviar-aula{
+    width: 20%;
+    height: 5%;
+}
+
+#bt-enviar-aula p{
+    font-size: 0.9rem;
 }
 
