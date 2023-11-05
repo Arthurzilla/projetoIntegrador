@@ -9,17 +9,38 @@
 </head>
 <body>
 
-    <div id="secao-superior"></div>
+    <div id="secao-superior">
+        <section>
+            <div id="secao-superior-esquerda">
+                <img src="../NAVBAR-IMAGES/Senac logo 11.png" alt="" srcset="">
+            </div>
+
+            <div id="secao-superior-direita">
+    
+                <select name="escolas" id="escola-select">
+                    <option value="">Escolha sua escola de atuação</option>
+                    <option value="senac-criciuma">SENAC - Criciúma</option>
+                    <option value="senac-joacaba">SENAC - Joaçaba</option>
+                </select>
+
+                <button id="bt-perfil">
+                    <img src="../NAVBAR-IMAGES/pedrinho.png" alt="" srcset="">
+                </button>
+                
+    
+        </section>
+    </div>
 
 <div id="secao-principal">
     <div id="bloco-principal">
     <div id="bloco-principal-superior">
-        <h1>Gerenciamento Didático - Sumário</h1>
+        <h1>Gerenciamento Didático - Planejamento de aulas</h1>
     </div>
 
     <div id="bloco-principal-inferior">
         <div id="bloco-principal-inferior-esquerdo">
-            <a href="../PlanejamentoDeAulas/index.html">Planejamento de aula</a>
+            
+            <a id="planejamento-aula-link" href="../PlanejamentoDeAulas/index.html">Planejamento de aula</a>
             <a href="../LançarFaltas/index.html">Lançar Faltas</a>
             <a href="AnotaçõesDoAlunos">Anotações do aluno</a>
             <a href="Instrutores.html">Intrutores</a>
@@ -36,43 +57,53 @@
         </div>
 
         <div id="bloco-principal-inferior-direito">
-
-            <div id="data">
-                <p>Insira a data da aula:</p>
-                <input type="date" id="data-input">
-            </div>
-               
-            <div id="turno">
-                <p>Turno da Aula:</p>
-
-                <div>
-                    Matutino<input type="checkbox"> Verspertino<input type="checkbox">
+            <section>
+                <div id="data">
+                    <p>Insira a data da aula:</p>
+                    <input type="date" id="data-input">
+                </div>
+                   
+                <div id="turno">
+                    <p>Turno da Aula:</p>
+    
+                    <div>
+                        <p>
+                            Matutino<input type="checkbox" id="turno-matutino" name="turno">
+                            Vespertino<input type="checkbox" id="turno-vespertino" name="turno">
+                        </p>
+                    </div>
+                    
+                </div>
+                    
+                <div id="quantidade">
+                    <p>Quantas aulas:</p>
+                    <select name="aulas" id="aula-select">
+                        <option value="">Selecione a quantidade</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
                 </div>
                 
-            </div>
-                
-            <div id="quantidade">
-                <p>Quantas aulas: </p>
-                <select name="aulas" id="aula-select">
-                    <option value="">Selecione a quantidade</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                </select>
-            </div>
+                <div id="descricao"> 
+                    <textarea  id="textarea" cols="30" rows="10" ></textarea>
+                </div>
+
+                <button id="bt-enviar-aula">
+                    <p>Enviar Aula</p>
+                </button>
+            </section>
+
             
-            <div id="descricao"> 
-                <textarea  id="textarea" cols="30" rows="10"  readonly></textarea>
-            </div>
     </div>
 </div>
 </div>
 
-
+    <script src="script.js"></script>
 </body>
 </html>

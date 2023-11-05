@@ -20,6 +20,95 @@ html h1{
     border-bottom: 0.7vh solid orange;
 
 }
+/* nav*/
+
+#secao-superior{
+    background-color:  lightgray;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 5vh;
+
+    /* bordas */
+    border-bottom: 0.7vh solid orange;
+
+    /* flex-box */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#secao-superior section{
+    width: 95%;
+    height: 95%;
+
+    background-color:none;
+
+    /* flex-box */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#secao-superior-esquerda img{
+    height: 100%;
+    width: auto;
+}   
+
+#secao-superior-direita{
+    background-color: none;
+    width: 20%;
+    height: 100%;
+
+    /* flex-box */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secao-superior-direita select{
+    width: 50%;
+    height: 30%;
+    background-color: none;
+
+    border: none;
+    border-radius: 0.6rem;
+}
+
+#secao-superior-direita select:focus{
+    border-color: none;
+}
+
+#bt-perfil{
+    height: 4rem;
+    width: 4rem;
+
+    /* bordas */
+    border-radius: 100%;
+    border: none;
+
+    background-color: none;
+
+    /* flex-box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#bt-perfil img{
+    border-radius: 100%;
+}
+
+
+#secao-superior-direita img{
+    height: 100%;
+}
+
 #secao-principal{
     background-color: none;
     width: 50%;
@@ -105,6 +194,9 @@ html h1{
     
 }
 
+
+
+
 #bloco-principal-inferior-esquerdo a{
     /* decoracao do texto */
     text-decoration: none;
@@ -117,10 +209,15 @@ html h1{
     
 }
 
+
+
 #bloco-principal-inferior-esquerdo a:hover{
-    color: darkblue;
+    color: orange;
     font-weight: bold;
 }
+
+
+
 
 #bloco-principal-inferior-direito{
     background-color: white;
@@ -135,6 +232,35 @@ html h1{
     justify-content: center;
     align-items: center;
     gap: 4%;
+}
+
+#bloco-principal-inferior-direito section{
+    width: 90%;
+    height: 90%;
+
+    /* flex-box */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+#descricao{
+    width: 100%;
+    background-color: black;
+    height: 10%;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#bloco-principal-inferior-direito section textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
 }
 
 #data{
@@ -167,8 +293,14 @@ html h1{
     height: 100%;
 }
 
-#textarea{
-    resize: none;
-    width: 90%;
+/* botao de enviar aula */
+
+#bt-enviar-aula{
+    width: 20%;
+    height: 5%;
+}
+
+#bt-enviar-aula p{
+    font-size: 0.9rem;
 }
 

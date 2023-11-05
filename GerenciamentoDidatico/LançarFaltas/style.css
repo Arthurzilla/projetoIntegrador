@@ -9,16 +9,93 @@ body{
 html h1{
     font-size: min(200%, 3vw);
 }
+/* nav*/
+
 #secao-superior{
-    background-color: white;
+    background-color:  lightgray;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
     margin-bottom: 5vh;
 
     /* bordas */
-
     border-bottom: 0.7vh solid orange;
 
+    /* flex-box */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#secao-superior section{
+    width: 95%;
+    height: 95%;
+
+    background-color:none;
+
+    /* flex-box */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#secao-superior-esquerda img{
+    height: 100%;
+    width: auto;
+}   
+
+#secao-superior-direita{
+    background-color: none;
+    width: 20%;
+    height: 100%;
+
+    /* flex-box */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secao-superior-direita select{
+    width: 50%;
+    height: 30%;
+    background-color: none;
+
+    border: none;
+    border-radius: 0.6rem;
+}
+
+#secao-superior-direita select:focus{
+    border-color: none;
+}
+
+#bt-perfil{
+    height: 4rem;
+    width: 4rem;
+
+    /* bordas */
+    border-radius: 100%;
+    border: none;
+
+    background-color: none;
+
+    /* flex-box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#bt-perfil img{
+    border-radius: 100%;
+}
+
+
+#secao-superior-direita img{
+    height: 100%;
 }
 #secao-principal{
     background-color: none;
@@ -134,13 +211,29 @@ html h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< HEAD
     justify-content: space-around;
+=======
+    justify-content: center;
+
+
+>>>>>>> e36b38b400566b0298e05f738e8ad9843e7d7690
 }
 #bloco-principal-inferior-direito section{
     background-color: none;
     width:90%;
     height:99%;
 
+<<<<<<< HEAD
+=======
+#chamada{
+    width: 90%;
+    height: 90%;
+    background-color: whitesmoke;
+    overflow-y: scroll;
+
+    /* flex-box */
+>>>>>>> e36b38b400566b0298e05f738e8ad9843e7d7690
     display: flex;
     flex-direction: column;
     justify-content: center;
