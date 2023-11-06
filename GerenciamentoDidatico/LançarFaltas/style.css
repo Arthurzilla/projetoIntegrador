@@ -61,7 +61,7 @@ html h1{
 
 #secao-superior-direita select{
     width: 50%;
-    height: 30%;
+    height: 40%;
     background-color: none;
 
     border: none;
@@ -195,7 +195,7 @@ html h1{
 }
 
 #bloco-principal-inferior-esquerdo a:hover{
-    color: darkblue;
+    color: orange;
     font-weight: bold;
 }
 
@@ -217,6 +217,11 @@ html h1{
 }
 #bloco-principal-inferior-direito section{
     background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
     width:90%;
     height:99%;
 }
@@ -224,7 +229,7 @@ html h1{
 #chamada{
     width: 90%;
     height: 90%;
-    background-color: whitesmoke;
+    background-color: grey;
     overflow-y: scroll;
 
     /* flex-box */
@@ -248,7 +253,7 @@ html h1{
     width: 100%;
     height: 80%;
     overflow-y: scroll;
-    background-color: antiquewhite;
+    background-color: none;
 
     /* flex-box */
     display: flex;
@@ -269,7 +274,7 @@ html h1{
 }
 
 #chamada ul li{
-    background-color: grey;
+    background-color: lightgrey;
     width: 97%;
     margin: 0.3rem;
     padding: 0.2rem;
@@ -297,4 +302,9 @@ html h1{
 #botao-enviar{
     width: 50%;
     height: 6%;
+}
+
+.anchor {
+    background-color: lightgrey;
+    color: orange;
 }
