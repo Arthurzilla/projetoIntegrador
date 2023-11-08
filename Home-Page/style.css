@@ -1,0 +1,25 @@
+header{
+    height: 20vh;
+    background-color: burlywood;
+
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav{
+    width: 60%;
+    height: 80%;
+    background-color: lightgray;
+}
+
+main{
+    height: 80vh;
+    background-color: cadetblue;
+}
+
+footer{
+    height: 20vh;
+    background-color: chocolate;
+}
