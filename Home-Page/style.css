@@ -2,33 +2,113 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    font-family: sans-serif;
 }
 
 nav{
     width: 100%;
-    height: 100%;
+    height: 10vh;
     background-color: lightgray;
+    margin-bottom: 10vh;
 
 
 }
 
 header{
     height: 15vh;
-    width: 98.9vw;
-    background-color: burlywood;
+    width: 50vw;
+    background-color: none;
 
     /* flexbox */
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 12px;
+}
+
+#cabecalho-titulo{
+    font-size: 37px;
+    font-weight: bold;
+    width: 40%;
+    background-color: none;
+
+    text-align: center;
+}
+
+#cabecalho-parte-inferior{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
 }
 
 
 
 main{
     width: 50vw;
-    height: 80vh;
-    background-color: cadetblue;
+    height: 45vh;
+    background-color: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#parte-principal-principal{
+    background-color: lightgray;
+
+    height: 100%;
+    width: 95%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+#parte-principal-principal p{
+    font-size: larger;
+    margin-left: 10px;
+}
+
+#bloco-lista-materias{
+    background-color: whitesmoke;
+    width: 90%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+
+}
+
+#bloco-lista-materias ul{
+    width: 100%;    
+    height: 100%;
+}
+#bloco-lista-materias ul li{
+    width: 90%;
+    height: 50px;
+    background-color: darkgrey;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    
+}
+
+#lista-materias li{
+    padding-left: 10px;
 }
 
 footer{
