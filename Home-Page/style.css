@@ -182,6 +182,20 @@ main p{
     flex-direction: column;
     align-items: center;
 }
+
+#lista-materias ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#lista-materias ul li{
+    width: 100%;
+}
+
+
 #lista-materias a{
     width: 90%;
     height: 50px;
@@ -211,4 +225,8 @@ main p{
 footer{
     height: 15vh;
     background-color: chocolate;
+}
+
+#vazio-msg{
+    padding-top: 10px;
 }
