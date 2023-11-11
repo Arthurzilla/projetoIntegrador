@@ -1,9 +1,15 @@
+*{
+    font-family:"consolas", sans-serif;
+}
+
 body{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: none;
+
+    
 }
 
 html h1{
@@ -73,8 +79,8 @@ html h1{
 }
 
 #bt-perfil{
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
 
     /* bordas */
     border-radius: 100%;
@@ -97,52 +103,17 @@ html h1{
 #secao-superior-direita img{
     height: 100%;
 }
-#secao-principal{
+
+main{
     background-color: none;
-    width: 50%;
+    width: 80%;
     height: 80vh;
 
     /* flexbox */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-}
-
-#bloco-principal{
-    background-color: none;
-    width: 100%;
-    height: 100%;
-
-    /* flexbox */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-
-}
-
-#bloco-principal-superior{
-    background-color: lightgrey;
-    width: 100%;
-    height: 20%;
-
-    /* flexbox */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    /* bordas */
-
-    border: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-#bloco-principal-superior h1{
-    font-family: sans-serif;
 }
 
 #bloco-principal-inferior{
@@ -157,13 +128,11 @@ html h1{
 
     /* bordas */
     border: 1px solid lightgray;
-    border-top: 1px solid lightgray;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
 #bloco-principal-inferior-esquerdo{
-    background-color: white;
     height:90%;
     width: 30%;
 
@@ -173,34 +142,80 @@ html h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 2.5%;
-
-    /* bordas */
-
-    border: 3px whitesmoke outset;
+    justify-content: space-between;
+    
     
 }
 
-#bloco-principal-inferior-esquerdo a{
+#bloco-principal-inferior-esquerdo-superior{
+    width: 100%;
+    height: 20%;
+    background-color: lightgray;
+
+    border: 3px whitesmoke outset;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   font-size: xx-large;
+   font-weight: bold;
+   
+}
+
+
+#bloco-principal-inferior-esquerdo-inferior{
+    background-color: lightgray;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+    border: 3px whitesmoke outset;
+}
+#bloco-principal-inferior-esquerdo-inferior ul{
+    height: 90%;
+    width: 90%;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#bloco-principal-inferior-esquerdo-inferior ul li{
+    width: 80%;
+    height: auto;
+
+    background-color: none;
+    text-align: center;
+}
+
+#bloco-principal-inferior-esquerdo-inferior a{
     /* decoracao do texto */
     text-decoration: none;
-    color: #888888;
+    color:  #004A8D;
+    background-color: none;
+
     /* tamanhos */
     font-size: 14px;
-    width: 90%;
+    
+   
     /* fontes */
     font-family: "consolas", sans-serif;
     
 }
 
-#bloco-principal-inferior-esquerdo a:hover{
+#bloco-principal-inferior-esquerdo-inferior a:hover{
     color: orange;
     font-weight: bold;
 }
 
 #bloco-principal-inferior-direito{
-    background-color: rgb(255, 255, 255);
+    background-color: lightgray;
     height:90%;
     width: 60%;
     border: 3px whitesmoke outset;
@@ -304,7 +319,9 @@ html h1{
     height: 6%;
 }
 
-.anchor {
-    background-color: lightgrey;
+
+.anchor span{
     color: orange;
+    font-weight: bold;
+    
 }

@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento Didático - Planejamento de Aulas</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
 
     <div id="secao-superior">
         <section>
             <div id="secao-superior-esquerda">
-                <img src="../NAVBAR-IMAGES/Senac logo 11.png" alt="" srcset="">
+                <a href="/Home-Page/index.html"><img src="../NAVBAR-IMAGES/Senac logo 11.png" alt="" srcset=""></a>
             </div>
 
             <div id="secao-superior-direita">
@@ -30,79 +31,81 @@
     
         </section>
     </div>
+       
+<main>
+    <div id="bloco-principal-inferior-esquerdo">
 
-<div id="secao-principal">
-    <div id="bloco-principal">
-    <div id="bloco-principal-superior">
-        <h1>Gerenciamento Didático - Planejamento de aulas</h1>
-    </div>
-
-    <div id="bloco-principal-inferior">
-        <div id="bloco-principal-inferior-esquerdo">
-            
-        <a id="planejamento-aula-link" href="../PlanejamentoDeAulas/index.html">Planejamento de aula</a>
-            <a href="../LançarFaltas/index.html">Lançar Faltas</a>
-            <a href="AnotaçõesDoAlunos">Anotações do aluno</a>
-            <a href="Instrutores.html">Intrutores</a>
-            <a href="Avaliações.html">Avaliações</a>
-            <a href="Inscrições.html">Inscrições</a>
-            <a href="DocumentosAnexados.html">Documentos Anexados</a>
-            <a href="RealizarUnidadeCurricular">Realizar Unidade Curricular</a>
-            <a href="PlanoDeTrabalhoDocente.html">Plano de trabalho docente</a>
-            <a href="DiárioDeClasse.html">Diário de classe</a>
-            <a href="RelatórioAnáliseDaTurma.html">Relátório análise da turma</a>
-            <a href="AcompAprend.html">Acomp. Aprend.</a>
-            <a href="BoletimDoALuno.html">Boletim do aluno</a>
-            <a href="EnvioDeArquivos.html">Envio de arquivos</a>
+        <div id="bloco-principal-inferior-esquerdo-superior">
+            <p>Turma > Matéria</p>
         </div>
 
-        <div id="bloco-principal-inferior-direito">
-            <section>
-                <div id="data">
-                    <p>Insira a data da aula:</p>
-                    <input type="date" id="data-input">
-                </div>
-                   
-                <div id="turno">
-                    <p>Turno da Aula:</p>
-    
-                    <div>
-                        <p>
-                            Matutino<input type="checkbox" id="turno-matutino" name="turno">
-                            Vespertino<input type="checkbox" id="turno-vespertino" name="turno">
-                        </p>
-                    </div>
-                    
-                </div>
-                    
-                <div id="quantidade">
-                    <p>Quantas aulas:</p>
-                    <select name="aulas" id="aula-select">
-                        <option value="">Selecione a quantidade</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                    </select>
+        <div id="bloco-principal-inferior-esquerdo-inferior">
+            <ul>
+                <li  class="anchor"><a href="../PlanejamentoDeAulas/index.html"><span>Planejamento de aula</span></a></li>
+                <li><a  href="../LançarFaltas/index.html">Lançar Faltas</a></li>
+                <li><a href="AnotaçõesDoAlunos">Anotações do aluno</a></li>
+                <li><a href="Instrutores.html">Intrutores</a></li>
+                <li><a href="Avaliações.html">Avaliações</a></li>
+                <li><a href="Inscrições.html">Inscrições</a></li>
+                <li><a href="DocumentosAnexados.html">Documentos Anexados</a></li>
+                <li><a href="RealizarUnidadeCurricular">Realizar Unidade Curricular</a></li>
+                <li><a href="PlanoDeTrabalhoDocente.html">Plano de trabalho docente</a></li>
+                <li><a href="DiárioDeClasse.html">Diário de classe</a></li>
+                <li><a href="RelatórioAnáliseDaTurma.html">Relátório análise da turma</a></li>
+                <li> <a href="AcompAprend.html">Acomp. Aprend.</a></li>
+                <li><a href="BoletimDoALuno.html">Boletim do aluno</a></li>
+                <li><a href="EnvioDeArquivos.html">Envio de arquivos</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="bloco-principal-inferior-direito">
+        <section>
+            <div id="data">
+                <p>Insira a data da aula:</p>
+                <input type="date" id="data-input">
+            </div>
+               
+            <div id="turno">
+                <p>Turno da Aula:</p>
+
+                <div>
+                    <p>
+                        Matutino<input type="checkbox" id="turno-matutino" name="turno">
+                        Vespertino<input type="checkbox" id="turno-vespertino" name="turno">
+                    </p>
                 </div>
                 
-                <div id="descricao"> 
-                    <textarea  id="textarea" cols="30" rows="10" ></textarea>
-                </div>
-
-                <button id="bt-enviar-aula">
-                    <p>Enviar Aula</p>
-                </button>
-            </section>
-
+            </div>
+                
+            <div id="quantidade">
+                <p>Quantas aulas:</p>
+                <select name="aulas" id="aula-select">
+                    <option value="">Selecione a quantidade</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
             
-    </div>
+            <div id="descricao"> 
+                <textarea  id="textarea" cols="30" rows="10" ></textarea>
+            </div>
+
+            <button id="bt-enviar-aula">
+                <p>Enviar Aula</p>
+            </button>
+        </section>
+
+     
 </div>
-</div>
+</main>
+       
 
     <script src="script.js"></script>
 </body>

@@ -8,9 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <p>Olá</p>
-    </nav>
+    <div id="secao-superior">
+        <section>
+            <div id="secao-superior-esquerda">
+                <a href="/Home-Page/index.html"><img src="/GerenciamentoDidatico/NAVBAR-IMAGES/Senac logo 11.png" alt="" srcset=""></a>
+            </div>
+    
+            <div id="secao-superior-direita">
+    
+                <select name="escolas" id="escola-select">
+                    <option value="">Escolha sua escola de atuação</option>
+                    <option value="senac-criciuma">SENAC - Criciúma</option>
+                    <option value="senac-joacaba">SENAC - Joaçaba</option>
+                </select>
+    
+                <button id="bt-perfil">
+                    <img src="../GerenciamentoDidatico/NAVBAR-IMAGES/pedrinho.png" alt="" srcset="">
+                </button>
+                
+    
+        </section>
+    </div>
     
    <header>
     <p id="cabecalho-titulo">Bem vindo ao SEI!</p>
@@ -29,27 +47,19 @@
    </header>
 
     <main>
-        
-        </p>
 
-        <div id="parte-principal-principal">
             <p>Suas matérias:</p>
 
             <div id="bloco-lista-materias">
-                <ul id="lista-materias">
-                    <li><a href="/GerenciamentoDidatico/PlanejamentoDeAulas/index.html">Projeto integrador</a></li>
-                    <li><a href="/GerenciamentoDidatico/PlanejamentoDeAulas/index.html"">Front-end</a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
+                <div id="lista-materias">
+                    <a href="/GerenciamentoDidatico/PlanejamentoDeAulas/index.html"><span>Projeto Integrador</span></a>
+                    <a href="/GerenciamentoDidatico/PlanejamentoDeAulas/index.html"><span>Front-End</span></a>
+                </div>
             </div>
-        </div>
     </main>
     <footer>
 </footer>
 </body>
+
+<script src="script.js"></script>
 </html>

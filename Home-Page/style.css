@@ -4,15 +4,94 @@ body{
     align-items: center;
 
     font-family: sans-serif;
+    background-color: 	white;
 }
 
-nav{
+#secao-superior{
+    background-color:  lightgray;
     width: 100%;
     height: 10vh;
-    background-color: lightgray;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
+
+    /* bordas */
+    border-bottom: 0.7vh solid orange;
+
+    /* flex-box */
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+#secao-superior section{
+    width: 95%;
+    height: 95%;
+
+    background-color:none;
+
+    /* flex-box */
+    display: flex;
+    justify-content: space-between;
+}
 
 
+
+#secao-superior-esquerda img{
+    height: 100%;
+    width: auto;
+}   
+
+#secao-superior-direita{
+    background-color: none;
+    width: 20%;
+    height: 100%;
+
+    /* flex-box */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#secao-superior-direita select{
+    width: 50%;
+    height: 40%;
+    background-color: none;
+
+    border: none;
+    border-radius: 0.6rem;
+}
+
+#secao-superior-direita select:focus{
+    border-color: none;
+}
+
+#bt-perfil{
+    height: 3rem;
+    width: 3rem;
+
+    /* bordas */
+    border-radius: 100%;
+    border: none;
+
+    background-color: none;
+
+    /* flex-box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#bt-perfil img{
+    border-radius: 100%;
+}
+
+
+#secao-superior-direita img{
+    height: 100%;
 }
 
 header{
@@ -33,36 +112,39 @@ header{
 #cabecalho-titulo{
     font-size: 37px;
     font-weight: bold;
-    width: 40%;
+    width: 100%;
+    height: 40%;
     background-color: none;
 
     text-align: center;
 }
 
 #cabecalho-parte-inferior{
-    width: 30%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
 }
 
 
 
-main{
-    width: 50vw;
-    height: 45vh;
+/* main{
+    width: 60%;
+    height: 60vh;
     background-color: none;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+    border: 1px solid lightgray;
+} */
 
-#parte-principal-principal{
+main{
     background-color: lightgray;
 
-    height: 100%;
-    width: 95%;
+    width: 60%;
+    height: 60vh;
 
     display: flex;
     flex-direction: column;
@@ -70,9 +152,11 @@ main{
     justify-content: center;
 
     gap: 15px;
+
+    border: 3px whitesmoke outset;
 }
 
-#parte-principal-principal p{
+main p{
     font-size: larger;
     margin-left: 10px;
 }
@@ -87,28 +171,41 @@ main{
     justify-content: flex-start;
     align-items: center;
     overflow-y: scroll;
+    border: 3px whitesmoke outset;
 
 }
 
-#bloco-lista-materias ul{
+#bloco-lista-materias div{
     width: 100%;    
-    height: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#bloco-lista-materias ul li{
+#lista-materias a{
     width: 90%;
     height: 50px;
-    background-color: darkgrey;
+    background-color: grey;
     margin: 10px;
     display: flex;
     align-items: center;
 
     text-decoration: none;
+    box-shadow: 2px 2px 2px #888888;
 
-    
+    transition: 0.3s;
 }
 
-#lista-materias li{
-    padding-left: 10px;
+#lista-materias a span{
+    color: whitesmoke;
+    padding: 15px;
+}
+
+
+
+#lista-materias a:hover{
+    background-color: #F7941D;
+
 }
 
 footer{
