@@ -26,22 +26,18 @@ buttton.addEventListener('click', function() {
 
 
     var QtdAulas = document.getElementById('aula-select').value;
-    alert(QtdAulas)
+
 
     var descricaoAula = document.getElementById('textarea').value;
-    alert(descricaoAula)
 
-
-
-
-
-  
-
-
-    Swal.fire({
-        title: "Aula enviada com sucesso!",
-        text: dataEscolhida + " " + "turno:" +  " " + turnoMatutinoEscolhido + " " + e + " " + turnoVespertinoEscolhido + " " + QtdAulas + " " + "Aulas" + " "+ descricaoAula,
-        icon: "success"
-        
-    });
+    if(dataEscolhida == "" || QtdAulas == "" || descricaoAula == "" || (turnoMatutino & turnoVespertino == "")){
+        alert('existe espaços em branco.')
+    }else{
+        alert('aula enviada com sucesso!')
+        dataEscolhida = "";
+        turnoMatutino.checked = false;
+        turnoVespertino.checked = false;
+        descricaoAula.textContent = "";
+        QtdAulas = "";
+    }
 })
