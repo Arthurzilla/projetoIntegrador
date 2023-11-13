@@ -1,7 +1,7 @@
 var buttton = document.getElementById('bt-enviar-aula')
 buttton.addEventListener('click', function() {
 
-    var dataEscolhida = document.getElementById('data-input').value;
+    const dataEscolhida = document.getElementById('data-input');
 
     const turnoMatutino = document.getElementById('turnoMatutino');
     const turnoVespertino = document.getElementById('turnoVespertino');
@@ -25,19 +25,21 @@ buttton.addEventListener('click', function() {
 
 
 
-    var QtdAulas = document.getElementById('aula-select').value;
+    var QtdAulas = document.getElementById('aula-select');
 
 
-    var descricaoAula = document.getElementById('textarea').value;
+    const descricaoAula = document.getElementById('mensagem')
 
-    if(dataEscolhida == "" || QtdAulas == "" || descricaoAula == "" || (turnoMatutino & turnoVespertino == "")){
+    if(dataEscolhida.value == "" || QtdAulas.value == "" || descricaoAula.value == "" || turnoMatutino.checked == false & turnoVespertino.checked == false){
         alert('existe espaços em branco.')
     }else{
-        alert('aula enviada com sucesso!')
-        dataEscolhida = "";
+        descricaoAula.value = '';
         turnoMatutino.checked = false;
         turnoVespertino.checked = false;
-        descricaoAula.textContent = "";
-        QtdAulas = "";
+        dataEscolhida.value = '';
+        QtdAulas.value = '';
+
+        alert('aula enviada com sucesso!')
+        
     }
 })
