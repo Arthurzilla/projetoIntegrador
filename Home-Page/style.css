@@ -1,3 +1,4 @@
+
 body{
     display: flex;
     flex-direction: column;
@@ -6,6 +7,8 @@ body{
     font-family: sans-serif;
     background-color: 	white;
 }
+
+
 
 #secao-superior{
     background-color:  lightgray;
@@ -230,3 +233,72 @@ footer{
 #vazio-msg{
     padding-top: 10px;
 }
+
+
+/* barra lateral css */
+.barra-lateral{
+    position: absolute;
+    height: 99vh;
+    width: 20vw;
+    right: 0px;
+    background-color: #004A8D;
+    border: 0.5vh #F7941D outset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#barra-lateral-cabecalho{
+    width: 95%;
+    height: 10%;
+    display: flex;
+    background-color: none;
+    margin: 5%;
+
+    align-items: center;
+}
+
+#barra-lateral-cabecalho p{
+    margin-left: 2%;
+    color: whitesmoke;
+}
+
+#barra-lateral-cabecalho img{
+    border-radius: 100%;
+    height: 80%;
+}
+
+#fechar-barra-lateral{
+    width: 40px;
+    height: 40px;
+    margin-left: 17%;
+    background-color: transparent;
+    border: none;
+    color: #F7941D;
+}
+
+#fechar-barra-lateral:hover{
+   background-color: #888888;
+   border-radius: 10%;
+}
+
+#barra-lateral-principal{
+    height: 70%;
+    width: 95%;
+    margin: 5%;
+    background-color: bisque;
+}
+
+#barra-lateral-inferior{
+    height: 10%;
+    width: 95%;
+    background-color: whitesmoke;
+    margin: 5%;
+}
+
+[hidden]{
+    display: none;
+}
+
+

@@ -1,3 +1,4 @@
+
 var botao = document.getElementById("turmas");
 botao.addEventListener('click', function(){
     var turmas = document.getElementById('turmas').value;
@@ -57,4 +58,16 @@ botao.addEventListener('click', function(){
             break;
 
     }
+})
+
+var btPerfil = document.getElementById('bt-perfil')
+var barraLateral = document.getElementById('barra-lateral')
+var btFecharBarraLateral = document.getElementById('fechar-barra-lateral')
+btPerfil.addEventListener('click', function(){
+    barraLateral.hidden = false;
+})
+
+btFecharBarraLateral.addEventListener('click', function(){
+    barraLateral.hidden = true;
+    
 })
