@@ -224,12 +224,6 @@ main p{
     background-color: #F7941D;
 
 }
-
-footer{
-    height: 15vh;
-    background-color: chocolate;
-}
-
 #vazio-msg{
     padding-top: 10px;
 }
@@ -255,24 +249,39 @@ footer{
     display: flex;
     background-color: none;
     margin: 5%;
-
     align-items: center;
+    justify-content: space-between;
+    gap: 15%;
+    background-color: none;
+
 }
 
 #barra-lateral-cabecalho p{
-    margin-left: 2%;
     color: whitesmoke;
 }
 
-#barra-lateral-cabecalho img{
+#barra-lateral-cabecalho-esquerda{
+    background-color: none;
+    width: 60%;
+    height: 60%;
+
+    /* flex-box */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: none;
+    gap: 5%;
+}
+
+#barra-lateral-cabecalho-esquerda img{
     border-radius: 100%;
-    height: 80%;
+    height: 100%;
 }
 
 #fechar-barra-lateral{
+    right: 0px;
     width: 40px;
     height: 40px;
-    margin-left: 17%;
     background-color: transparent;
     border: none;
     color: #F7941D;
@@ -351,7 +360,7 @@ footer{
 }
 #escurecer{
     left: 0;
-    width: 80vw;
+    width: 100%;
     height: 100%;
     position: absolute;
     background-color: black;
