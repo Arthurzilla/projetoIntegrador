@@ -270,6 +270,8 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
+    border: 1px solid black;
 }
 
 #chamada ul{
@@ -287,7 +289,8 @@ main{
     background-color: lightgrey;
     width: 97%;
     margin: 0.3rem;
-    padding: 0.2rem;
+    padding: 0.3rem;
+    border: 1px white outset;
 
     /* flex-box */
     display: flex;
