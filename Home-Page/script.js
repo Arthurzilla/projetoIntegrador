@@ -69,7 +69,7 @@ btPerfil.addEventListener('click', function(){
     varEscurecer.hidden = false;
 })
 
-
+    
 
 btFecharBarraLateral.addEventListener('click', function(){
     barraLateral.hidden = true;
